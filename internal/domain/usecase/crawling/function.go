@@ -1,13 +1,9 @@
 package crawling
 
-func (rc *crawlingUsecase) SaveCSS(url string, data []byte) (string, error) {
-	return "", nil
+func (uc *crawlingUsecase) SaveCSS(url string, data []byte) (string, error) {
+	return uc.crawlingRepository.SaveCSS(url, data)
 }
 
-func (rc *crawlingUsecase) SaveHTML(url string, data []byte) (string, error) {
-	return "", nil
-}
-
-func (rc *crawlingUsecase) GetFilename(url string, extension string) (string, error) {
-	return "", nil
+func (uc *crawlingUsecase) SaveHTML(url string, data []byte) (string, error) {
+	return uc.crawlingRepository.SaveHTML(url, data)
 }

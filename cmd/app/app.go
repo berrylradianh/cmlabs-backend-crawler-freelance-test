@@ -13,8 +13,8 @@ import (
 
 func StartApp() *echo.Echo {
 	crawlingRepo := crawlingRepo.New()
-	crawlingUsecase := crawlingUsecase.New(crawlingRepo)
-	crawlingHandler := crawlingHandler.New(crawlingUsecase)
+	crawlingUsecase := crawlingUsecase.NewCrawlingUsecase(crawlingRepo)
+	crawlingHandler := crawlingHandler.NewCrawlingHandler(crawlingUsecase)
 
 	handler := handler.Handler{
 		CrawlingHandler: crawlingHandler,

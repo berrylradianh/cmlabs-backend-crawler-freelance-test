@@ -8,8 +8,8 @@ type CrawlingHandler struct {
 	crawlingUsecase cu.CrawlingUsecase
 }
 
-func New(crawlingUsecase cu.CrawlingUsecase) *CrawlingHandler {
+func NewCrawlingHandler(crawlingUsecase cu.CrawlingUsecase) *CrawlingHandler {
 	return &CrawlingHandler{
-		crawlingUsecase,
+		crawlingUsecase: crawlingUsecase,
 	}
 }

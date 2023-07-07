@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	godotenv.Load("../.env")
+	godotenv.Load(".env")
 }
 
 func main() {

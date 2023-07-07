@@ -13,7 +13,7 @@ func StartRoute(handler handler.Handler) *echo.Echo {
 	e.Validator = &hlp.CustomValidator{Validator: validator.New()}
 	logger.LogMiddleware(e)
 
-	handler.AuthHandler.RegisterRoutes(e)
+	handler.CrawlingHandler.RegisterRoutes(e)
 
 	return e
 }

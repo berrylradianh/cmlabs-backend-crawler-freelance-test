@@ -14,17 +14,8 @@ Repository yang digunakan untuk Pre-assessment Test  Intermediate Back-end Devel
     ```
     cp .env.example .env
     ```
-3. Configure environment variables for database connection
-    ```
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_NAME=cmlabs_crawler
-    DB_USERNAME=root
-    DB_PASSWORD=
-    ```
 
-4.  Run the application
+3.  Run the application
     ```
     go run main.go
     ```
